@@ -1,0 +1,6 @@
+- Code Completion no Shell
+  Pesquisando sobre IDE Python na internet vi que o PyDEV para Eclipse possui uma integração interessante no Shell
+  Ele habilita o Code Completion no Shell do Python (quando se usa o Terminal dentro da IDE).
+  Para testes rápidos e estudos isso é sensacional.
+
+- Números Complexos no Python
