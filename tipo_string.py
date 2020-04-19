@@ -94,5 +94,25 @@ emoji_naovejo_macaco = '\U0001F60D'
 for i in range(1, 11):
     print(emoji_naovejo_macaco * i)
 
+"""
+Concatenação de string
+"""
+
+# Com "+" (método semelhante a outras linguagens)
+nome = 'Maicon'
+sobrenome = 'Saraiva'
+nomecompleto = nome + ' ' + sobrenome
+print(nomecompleto)  # Resultado: Maicon Saraiva
+
+# Com O .join
+nome = 'Maicon'
+sobrenome = 'Saraiva'
+# Antes do join, o ' ' (espaço) determina que será usado entre uma string e outra.
+# E dentro do join, passamos uma lista ou tupla com os elementos que queremos juntar.
+nomecompleto = ' '.join([nome, sobrenome])
+print(nomecompleto)  # Resultado: Maicon Saraiva
+
+
+
 
 
