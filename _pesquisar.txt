@@ -4,3 +4,17 @@
   Para testes rápidos e estudos isso é sensacional.
 
 - Números Complexos no Python
+
+
+"""
+ Todo: Verificar
+
+ O cálculo abaixo resulta estranhamento o resultado 0.43999999999999995, precisamos analisar o por que.
+ num = 1.44
+ num = num - 1  # Resultado: 0.43999999999999995, o correto seria: 0.44
+
+ Algo semelhante acontece ao multiplicar o valor "128.90" por ele mesmo. O retorno é: 16615.210000000003
+
+ Resposta:
+
+"""

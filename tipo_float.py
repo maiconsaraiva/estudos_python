@@ -23,17 +23,4 @@ v_float = 1.4
 print(int(v_float))  # Resultado: 1
 # Obs: Ao converter valores do tipo Float para Int perdemos os valores decimais. Cuidado ao usar essa conversão
 
-# Podemos trabalhar com números complexos:
-
-"""
- Todo: Verificar
- 
- O cálculo abaixo resulta estranhamento o resultado 0.43999999999999995, precisamos analisar o por que.
- num = 1.44
- num = num - 1  # Resultado: 0.43999999999999995, o correto seria: 0.44
- 
- Resposta:
- 
-"""
-
 
