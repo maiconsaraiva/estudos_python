@@ -1,5 +1,5 @@
 """
-Dicionários 
+Dicionários
 
 - O que chamaos de Dicionários em Python, em algumnas linguagens são conheciados por mapas.
 - São coleções do tipo Chave/Valor
@@ -32,11 +32,11 @@ Obs: Se tentarmos acessar uma chave que não existe, será gerada uma exception 
   print(dicionario['Sobrenome'])
 """
 
-# Usando o método "get()" não é gerada uma exception. Mesmo que a chave não existe não dá erro, 
+# Usando o método "get()" não é gerada uma exception. Mesmo que a chave não existe não dá erro,
 # apenas o resultado "None" é retornado.
 print(dicionario.get('Sobrenome'))  # Resultado: None
 
-# A recomendação é utilizar o get() quando queremos verificar se uma chave existe, e fazer determinada ação (sem 
+# A recomendação é utilizar o get() quando queremos verificar se uma chave existe, e fazer determinada ação (sem
 # precisar fazer os devidos tratamentos de uma exception)
 if (dicionario.get('Sobrenome') == None):
     print('A chave "Sobrenome" NÃO existe')
@@ -79,13 +79,14 @@ locais = {
 print(locais.get((38.6000, 39.5000)))  # Resultado: Licínio de Almeida
 
 """
-Adicionar elemtnos em um dicionário
+Adicionar elementos em um dicionário
 """
+
 # Forma 1: Basta atribuir o novo elemento que ele será criado automáticamente
 pessoa['cpf'] = '046.528.575-94'
 pessoa['sobrenome'] = 'Saraiva'
 
-# Forma 2: Usando o método: update() 
+# Forma 2: Usando o método: update()
 pessoa.update({'rg': '13872329-08'})
 
 print(pessoa)
@@ -135,15 +136,15 @@ carrinho = []
 
 # Produto 1
 carrinho.append({
-    'nome': 'Teclado USB Abnt Multilaser', 
-    'quantidade': 2, 
+    'nome': 'Teclado USB Abnt Multilaser',
+    'quantidade': 2,
     'valor_unitario': 22.80
 })
 
 # Produto 2
 carrinho.append({
-    'nome': 'Mouse Gamer', 
-    'quantidade': 2, 
+    'nome': 'Mouse Gamer',
+    'quantidade': 2,
     'valor_unitario': 35.80
 })
 
@@ -169,6 +170,38 @@ print('pessoa2:', pessoa2)  # Resultado: Todo o valor que continha em pessoa ant
 # {}.fromkeys. Forma não usual de criação de dicionários
 empresa = {}.fromkeys('nome', 'Sismais Tecnologia')
 
+# .keys(): Retorna uma lista com as chaves de um dicionário
+print(pessoa2.keys())
+
+# .values(): Retorna uma lista com os valores de um dicionário
+print(pessoa2.values())
+
+# .items() retorna uma lista com tuplas contendo a chave e valor do item. Ex: [(chave1, valor2), (chave2, valor2), (chave3, valor3)]
+print(pessoa2.items())
+
 # No exemplo abaixo criamos várias chaves e todas com o valor 'não definido'
 empresa = {}.fromkeys(['fantasia', 'cnpj', 'ie', 'edereco'], 'não definido')
 print(empresa)
+
+# Iterando em dicionários
+print('Imprimindo dados de pessoa:')
+
+# iterando apenas na chave e acessando o valor pela variável "chave"
+print('{:<20}'.format('  Chave  ') + '  Valor')
+for chave in pessoa2:
+    print('{:.<20}'.format(chave.title()) + f': {pessoa2[chave]}')
+
+# Itegrando com chave e valor em variáveis próprias
+for chave, valor in pessoa2.items():
+    print('{:.<20}'.format(f'Chave "{chave}"') + f': Valor: {valor}')
+
+for valor in pessoa2.values():
+    print('Iterando apenas sobre os valores. Valor: ', valor)
+
+
+
+
+
+# Operações em dicionários: Soma, Valor Máximo, Valor Mínimo, Tamanho
+
+print(len(pessoa2))  # Resultado: 6

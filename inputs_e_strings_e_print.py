@@ -39,8 +39,8 @@ Versão do print criados à partir da versão 3.4/3.5 do Python
 # print('Olá {0}, seja bem vindo! Sua idade é: {1}'.format(nome, idade))
 
 # Versão mais atual, criada a partir da versão 3.7 do Python
-print(f'Olá {nome}, seja bem vindo! Você nasceu em {date.today().year - idade} e tem {idade} ano(s).'
-      f' (Python 3.7 e maior)')
+print(f'Olá {nome}, seja bem vindo! Você nasceu em {date.today().year - idade} e tem {idade} ano(s).' +
+    f' (Python 3.7 e maior)')
 
 """ 
 Exemplo de print() mudando o kwargs "end" que determina o caractere de final de linha.

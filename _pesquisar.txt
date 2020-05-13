@@ -4,3 +4,10 @@
   Para testes rápidos e estudos isso é sensacional.
 
 - Números Complexos no Python
+
+
+- Obs: Segundo o professo do Geek University do Curso Python, os tipos da collections tem mais desepeneho do que os 
+       tipos clássicos. Ex: OrderedDict vs Dict clássico. 
+       Porém, é preciso estudar melhor sobre isso. Para saber se são só builtins que são muito rápidos apesar das suas 
+       funcionalidades (o que os torna melhores em suas finalidades específicas) ou se mesmo no uso comum, são 
+       realmente mais rápidos do que os tipos comuns.

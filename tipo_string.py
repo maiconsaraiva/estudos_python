@@ -112,7 +112,20 @@ sobrenome = 'Saraiva'
 nomecompleto = ' '.join([nome, sobrenome])
 print(nomecompleto)  # Resultado: Maicon Saraiva
 
+""" 
+Formatando dados de uma variável ao atribuir para uma string:
+"""
+preco = 10;
+desconto = 5;  #Em percentual
+preco_promocao = 9.50;
 
+print('Preço promocional: {:.2f} (com {}% de desconto)'.format(preco_promocao, desconto))
 
-
-
+print('{:-^48}'.format(' C L I E N T E '))
+print('{:>38}'.format('Dinheiro.........: '),'{:>9.2f}'.format(2950.06))
+print('{:>38}'.format('Cartão de Crédito: '),'{:>9.2f}'.format(15.556))
+print('{:>38}'.format('Cartão de Débito.: '),'{:>9.2f}'.format(15.556))
+print('{:>38}'.format('Cheque a Vista...: '),'{:>9.2f}'.format(15.556))
+print('{:>38}'.format('Cheque a Prazo...: '),'{:>9.2f}'.format(15.556))
+print('{:>38}'.format('Crediário........: '),'{:>9.2f}'.format(15.556))
+print('{:>38}'.format('Boleto Bancário..: '),'{:>9.2f}'.format(15.556))
