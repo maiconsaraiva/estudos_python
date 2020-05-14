@@ -12,6 +12,8 @@
 
 O mais comum é utilizar a aspas simples: 'Minha String', e em segundo lugar, aspas duplas: "Minha String"
 """
+from datetime import datetime, date
+
 # Exemplo com aspas duplas triplas: """Minha String"""
 
 nome = 'Geek University'
@@ -29,8 +31,8 @@ print(help(nome.upper))
 
 nome = 'Angelina\nJolie'  # Quebra de linha (reconhecida no Shell do Python
 print(nome)
-""" 
- split() quebra a string em uma list de strings. 
+"""
+ split() quebra a string em uma list de strings.
  Resultado: ['Angelina', 'Jolie']
  Obs: Por padrão ele quebra por espaço
 """
@@ -80,10 +82,10 @@ A tabela de emoji em Unicode, está disponível no link: https://apps.timwhitloc
 E sim, emojis podem ser impressos no Console, convertendo eles de uma maneira simples:
 Exemplo:
   Emoji de sorriso aberto, Unicode: U+1F603
-  Código que deve ser usado na impressão no console: \U0001F603 
+  Código que deve ser usado na impressão no console: \U0001F603
   (substitui-se o caractere "+" por três "0" (zeros), e adiciona-se a "\" no início)
-  
-# Obs: Não são todos os emojis que são reconhecidos pelo console.   
+
+# Obs: Não são todos os emojis que são reconhecidos pelo console.
 """
 
 # Exemplos:
@@ -112,7 +114,7 @@ sobrenome = 'Saraiva'
 nomecompleto = ' '.join([nome, sobrenome])
 print(nomecompleto)  # Resultado: Maicon Saraiva
 
-""" 
+"""
 Formatando dados de uma variável ao atribuir para uma string:
 """
 preco = 10;
@@ -129,3 +131,31 @@ print('{:>38}'.format('Cheque a Vista...: '),'{:>9.2f}'.format(15.556))
 print('{:>38}'.format('Cheque a Prazo...: '),'{:>9.2f}'.format(15.556))
 print('{:>38}'.format('Crediário........: '),'{:>9.2f}'.format(15.556))
 print('{:>38}'.format('Boleto Bancário..: '),'{:>9.2f}'.format(15.556))
+
+
+"""
+Os dois prints abaixo são usados na versão 2.x do Python (mais antigos),
+porém até a versão atual (3.8), ainda funciona
+"""
+# print('Olá %s, seja bem vindo! ' % nome)
+# print('Olá %s, seja bem vindo! Sua idade é %s' % (nome,idade))
+
+"""
+Versão do print criados à partir da versão 3.4/3.5 do Python
+"""
+# print('Olá {0}, seja bem vindo!'.format(nome))
+# print('Olá {0}, seja bem vindo! Sua idade é: {1}'.format(nome, idade))
+
+# Versão mais atual, criada a partir da versão 3.7 do Python
+nome = 'Maicon'
+idade = 30
+print(f'Olá {nome}, seja bem vindo! Você nasceu em {date.today().year - idade} e tem {idade} ano(s).' +
+    f' (Python 3.7 e maior)')
+
+"""
+Exemplo de print() mudando o kwargs "end" que determina o caractere de final de linha.
+O valor default do end é "\n", e é por isso que sempre que acionamos o print('alguma_coisa') é impresso em uma nova
+linha. Para mudar isso, basta personalizar o valor de "end", como podemos ver no exemplo abaixo.
+"""
+for letra in nome:
+    print(letra, end=' ')

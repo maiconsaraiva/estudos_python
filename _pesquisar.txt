@@ -3,6 +3,8 @@
   Ele habilita o Code Completion no Shell do Python (quando se usa o Terminal dentro da IDE).
   Para testes rápidos e estudos isso é sensacional.
 
+  R: No PyCharm o "Python Console" é um terminal interativo. Ele permite esse tipo de intelissence.
+
 - Números Complexos no Python
 
 
