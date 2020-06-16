@@ -1,5 +1,5 @@
 """
-Conjuntos
+Conjuntos (set)
 - Conjuntos em qualquer linguagem de programação, estamos fazendo referência à teoriza dos conjuntos da matemática.
 
 - No Python, os conjuntos são chamados de "sets"
@@ -8,16 +8,16 @@ Conjuntos
   - Sets (conjuntos) não possuem valores ordenados;
   - Elementos não são acessados via índice, ou seja, conjuntos não são indexados;
 
-Conjuntos são bons para se utilizar quando precisamos armazenar elementos, mas não nos importamos com a ordenação 
+Conjuntos são bons para se utilizar quando precisamos armazenar elementos, mas não nos importamos com a ordenação
 deles. Quando não precisamos nos preocupar com chaves, valores e itens duplicados.
 
-Os sets (conjuntos) são referenciados em Python com chaves: {} 
+Os sets (conjuntos) são referenciados em Python com chaves: {}
 
 Dferença entre conjuntos (sets)  e Mapas (dicionários) em Python:
     - Um dicionário tem chave/valor;
     - Um conjunto tem apenas valor;
 
-Assim como lista, tupla e dicionários, os conjuntos (sets) também aceitam qualquer tipo de dados.    
+Assim como lista, tupla e dicionários, os conjuntos (sets) também aceitam qualquer tipo de dados.
 
 """
 
@@ -60,7 +60,7 @@ print('n' in set_letras)  # Resultado: True
 print('j' in set_letras)  # Resultado: False
 
 
-# Importante lembrar que: Além de não termos valores duplicados, não temos ordem. Mesmo que você crie um dicionário 
+# Importante lembrar que: Além de não termos valores duplicados, não temos ordem. Mesmo que você crie um dicionário
 # e imprime logo em seguida, a ordem não virá como você definiu e nem por ordem alfabética
 s = set( {99, 1, 5, 50, 3, 4, 5, 8, 10, 9} )
 print(s)  # Resultado; {1, 3, 99, 5, 4, 8, 9, 10, 50}
@@ -73,11 +73,11 @@ for n in s:
 """
 Usos interessantes para conjuntos (sets):
 
-- Imagine que fizemos um formulário de cadastro de visitantes em uma feira ou museu, e os visitantes informam 
+- Imagine que fizemos um formulário de cadastro de visitantes em uma feira ou museu, e os visitantes informam
 manualmente a cidade de onde vieram.
 
-Nós adicionamos cada cidade um uma lista Python, j[a que em uma lista podemos adicionar novos elementos e ter 
-repetição. 
+Nós adicionamos cada cidade um uma lista Python, j[a que em uma lista podemos adicionar novos elementos e ter
+repetição.
 
 Supondo que 10 pessoas vieram de uma mesma cidade, na lista eu terei a cidade repetida 10 vezes.
 Se eu quiser saber a quantidade total distinta de cidades, eu posso jogar o conteúdo dessa lista em um conjunto.
@@ -101,7 +101,7 @@ print(s)
 s.remove(1)
 print(s)
 
-# s.remove(10)  # Se tentarmos remover um elemento que não existe, será gerada uma exception KeyError 
+# s.remove(10)  # Se tentarmos remover um elemento que não existe, será gerada uma exception KeyError
 
 # Forma 2
 s.discard(2)
@@ -155,7 +155,7 @@ estudantes_ambos = estudantes_python.intersection(estudantes_java)
 print(estudantes_ambos)  # Resultado: {'Patrícia', 'Julia'}  (as únicas que estudam os dois cursos)
 
 # Forma 2: Usando o &
-estudantes_ambos2 = estudantes_python & estudantes_java 
+estudantes_ambos2 = estudantes_python & estudantes_java
 print(estudantes_ambos2)  # Resultado: {'Patrícia', 'Julia'}
 
 # PROBLEMA 3: Gerar um conjunto de estudantes que não estão no outro curso
