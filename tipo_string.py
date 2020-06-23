@@ -159,3 +159,14 @@ linha. Para mudar isso, basta personalizar o valor de "end", como podemos ver no
 """
 for letra in nome:
     print(letra, end=' ')
+
+
+
+"""
+Algumas funções para String:
+
+- title()  (coloca as iniciais de cada palavra em maiscula)
+- upper()
+- lower()
+- strip() (remove espaços vazio no início e no final da string, semelhante ao trim() de outras linguagens)
+"""
