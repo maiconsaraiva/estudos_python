@@ -51,7 +51,7 @@ No for acima o resultado dos prints vai ser:
 7
 8
 9
- 
+
 """
 
 """
@@ -74,7 +74,7 @@ for i, letra in enumerate(nome):
     print(f'{nome[i]} = {letra}')  # Temos 2 formas de acessar os caracteres dentro da string no qual estamos iterando
 
 """
-Quando não precisamos de um valor (chave ou valor), podemos descarta-lo usando o "-" (underline). 
+Quando não precisamos de um valor (chave ou valor), podemos descarta-lo usando o "-" (underline).
 No exemplo abaixo, o índice (que foi descartado usando o "_")
 """
 print('7 ---------------------')
@@ -85,7 +85,7 @@ for _, letra in enumerate(nome):
 print('7 ---------------------')
 qtde = 6  # int(input('Quantas vezes esse loop deve rodar? '))
 """
-É importante lembrar que o final do range não é considerado, então de acordo com o contexto da pergunta ao usuário, 
+É importante lembrar que o final do range não é considerado, então de acordo com o contexto da pergunta ao usuário,
 o valor capturado na variável "qtde" dever receber + 1 no final do range.
 """
 print('8 ---------------------')
@@ -101,16 +101,16 @@ for valor in range(1, 11):
     print((nome + ' ') * valor)  # Cada passagem no for imprime 'Maicon' * valor
 """
 O Resultado será este abaixo:
-Maicon 
-Maicon Maicon 
-Maicon Maicon Maicon 
-Maicon Maicon Maicon Maicon 
-Maicon Maicon Maicon Maicon Maicon 
-Maicon Maicon Maicon Maicon Maicon Maicon 
-Maicon Maicon Maicon Maicon Maicon Maicon Maicon 
-Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon 
-Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon 
-Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon 
+Maicon
+Maicon Maicon
+Maicon Maicon Maicon
+Maicon Maicon Maicon Maicon
+Maicon Maicon Maicon Maicon Maicon
+Maicon Maicon Maicon Maicon Maicon Maicon
+Maicon Maicon Maicon Maicon Maicon Maicon Maicon
+Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon
+Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon
+Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon Maicon
 """
 
 # Exemplo de um for dentro de outro for:
@@ -121,6 +121,17 @@ for x in range(1, 6):
     print(f'Vez N° {x}')
     for valor in range(1, 11):
         print((nome + ' ') * valor)
+
+
+# Aplicando em uma situação real. Supondo que uma empresa fature 50.000 por mês atualmente.
+# Se ela tiver um crescimento de 10% ao mês, quanto ela estará faturando em 12 meses?
+
+meses = range(2, 13) # Começa a partir do mês 2, e vai até o 12° mês.
+faturamento = 50000
+for mes in meses:
+    faturamento = faturamento + (faturamento * 0.1)
+
+print(faturamento)
 
 
 
