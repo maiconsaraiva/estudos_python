@@ -26,3 +26,5 @@
  Resposta:
 
 """
+
+- Tem como deixar os erros do Python em portugues?
