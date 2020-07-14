@@ -121,5 +121,11 @@ for i in range(0,10):
  print('Erro de indentação! :O')
 """
 
+"""
+Lista com outros erros diversos:
+
+- ZeroDivisionError: division by zero
+"""
+
 
 
