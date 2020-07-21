@@ -174,3 +174,7 @@ print(sum(s))  # Resultado: 15
 print(min(s))  # Resultado: 1
 print(max(s))  # Resultado: 5
 print(len(s))  # Resultado: 5 (quantidade de elementos no conjunto)
+
+import datetime
+
+print(datetime.MAXYEAR)
