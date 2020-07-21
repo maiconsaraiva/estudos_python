@@ -58,8 +58,36 @@ usuarios_twitter = [
 # print(sorted(usuarios_twitter))  # TypeError: '<' not supported between instances of 'dict' and 'dict'
 
 # Precisa passar o parâmetros "key"
-# Usamos um lambda para calcular ordenar pela quantidade de Tweets (do maior para o menor)
+# Usamos um lambda para calcular a quantidade de tweets do usuário e ordenar por ela (do maior para o menor)
 print(sorted(usuarios_twitter, key=lambda usuario: len(usuario['tweets']), reverse=True))
+
+
+# Ordenando as bandas com musicas mais escutadas
+bandas = [
+    {'nome': 'Calcinha Preta', 'tocou': 150},
+    {'nome': 'Link Park', 'tocou': 120},
+    {'nome': 'Fala Mansa', 'tocou': 10},
+    {'nome': 'Evanescence', 'tocou': 80},
+    {'nome': 'Weslley Safadão', 'tocou': 30},
+    {'nome': 'Luxuria', 'tocou': 20},
+    {'nome': 'Limão com Mel', 'tocou': 45},
+]
+
+# Top 3 bandas
+# ToDo: Essa extração dava pra ser feita com o filter também?
+top_3 = sorted(bandas, key=lambda banda: banda['tocou'], reverse=True)[:3]
+
+# Imprime
+print('Top 3 bandas:')
+
+for banda in top_3:
+    print(f'{banda["nome"]}, tocou: {banda["tocou"]}')
+
+# dá pra fazer com list comprehension também:
+[print(f'{banda["nome"]}, tocou: {banda["tocou"]}') for banda in top_3]
+
+
+
 
 
 
