@@ -1,0 +1,5 @@
+Nova
+endo no arquivo!
+Escrevendo uma outra linha!
+Terceira linha!
+Este conteúdo, será adicionado na primeira linha. Pois usamos o seek(0)
