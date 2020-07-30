@@ -28,3 +28,5 @@
 """
 
 - Tem como deixar os erros do Python em portugues?
+
+- O que mais experientes acham do fato do Python não permitir criar variáveis ou métodos privados?
