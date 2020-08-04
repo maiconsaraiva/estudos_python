@@ -50,7 +50,7 @@ o método e classe, eles não precisam por exemplo ter obrigatoriamente o parâm
 
 class Lampada:
 
-    def __index__(self, cor, voltagem, luminosidade):
+    def __init__(self, cor, voltagem, luminosidade):
         self.__cor = cor
         self.__voltagem = voltagem
         self.__luminosidade = luminosidade
@@ -93,6 +93,7 @@ p1 = Produto('Teclado Megaware Multimedia', 'UN', 23.90)
 # Método de Instância
 print(p1.desconto(10))  # 21.51
 
+p1.__first_name()  # AttributeError: 'Produto' object has no attribute '__first_name'
 # Outra forma de fazer:
 print(Produto.desconto(p1, 10))  # 21,51
 
