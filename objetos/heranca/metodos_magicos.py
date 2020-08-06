@@ -38,7 +38,7 @@ class Livro:
         if not isinstance(other, int):
             raise ValueError(f'argument "other" must be integer type: {other}')
         msg = ''
-        for n in range(other):
+        for _ in range(other):
             msg += ' | '+str(self)
         return msg
 
@@ -93,7 +93,7 @@ Porém, podemos implementar o método mágico __del__ para fazer algum tratament
 No exemplo da classe Livro() acima, nós damos um print() com a mensagem de que o objeto foi excluído da memória.
 
 """
-# del livro2  # O livro Biografia de Steve Jobs do autor Não sei foi deletado da memória.
+del livro2  # O livro Biografia de Steve Jobs do autor Não sei foi deletado da memória.
 
 
 """
