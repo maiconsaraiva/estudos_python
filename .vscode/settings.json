@@ -3,6 +3,7 @@
         79,
         119
     ],
+    "python.pythonPath": "/home/maicon/.virtualenvs/Curso/bin/python",
     "python.linting.pycodestyleEnabled": true,
     "python.linting.pycodestyleArgs": ["--max-line-length", "120"],
     // "python.formatting.autopep8Args": ["--max-line-length", "120", "--experimental"],
