@@ -29,18 +29,24 @@ Forma 4:
 Range semelhante à forma 3, só que com a inversão dos números.
 """
 
+from datetime import datetime
+
+
 # Exemplo de range normal
 for n in range(1, 11):
-    print(f'Posição atual: {n}')  # Resultado: irá imprimir os números de 1 a 10 (o 11 não é considerado)
+    # Resultado: irá imprimir os números de 1 a 10 (o 11 não é considerado)
+    print(f'Posição atual: {n}')
 
 # Exemplo de range com valor inicial suprimido
 for n in range(11):
-    print(f'Posição atual === {n}')  # Irá imprimir de 0 a 10 (11 impressões), mas ainda assim, o 11 não será impresso.
+    # Irá imprimir de 0 a 10 (11 impressões), mas ainda assim, o 11 não será impresso.
+    print(f'Posição atual === {n}')
 
 
 # Exemplo de range com intervalo especificado
 for n in range(1, 11, 2):
-    print(f'Range com passo = 2. Posição atual: {n}')  # Resultado: 1, 3, 5, 7, 9
+    # Resultado: 1, 3, 5, 7, 9
+    print(f'Range com passo = 2. Posição atual: {n}')
 
 """
 # Range com inputs do usuário
@@ -57,13 +63,15 @@ for n in range(inicio, fim+1, intervalo):
 
 # Exemplo de range inverso
 for n in range(10, 0, -1):
-    print(f'Posição: {n}')  # Resultado: Vai de 10 até 1, decrementando 1. Obs: (o "0" não é inclusivo, ou seja não conta)
+    # Resultado: Vai de 10 até 1, decrementando 1. Obs: (o "0" não é inclusivo, ou seja não conta)
+    print(f'Posição: {n}')
 
 # Convertendo um range em uma lista
 
 # Errado:
-lista = range(0, 11)  # Nesse exemplo, a variável "lista" será do tipo "range" e não uma lista de fato.
+# Nesse exemplo, a variável "lista" será do tipo "range" e não uma lista de fato.
+lista = range(0, 11)
 
 # Certo:
-lista = list(range(0, 11))  # Agora sim, criamos uma lista à partir de um range: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+# Agora sim, criamos uma lista à partir de um range: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lista = list(range(0, 11))

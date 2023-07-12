@@ -1,3 +1,5 @@
+import ctypes
+
 class Produto:
 
     instance_count = 0
@@ -20,6 +22,7 @@ class Produto:
 
 
 print(Produto.nome_sistema)  # '' por que o default.
+print('Produto Default: ', id(Produto.nome_sistema))
 
 Produto.nome_sistema = 'Maxpró ERP'
 print(Produto.nome_sistema)  # Maxpró ERP
@@ -35,12 +38,10 @@ uma nova variável/propriedade dinâmica dentro do objeto. A variável de classe
 e demais objetos, continuam inalteradas.
 """
 p1.nome_sistema = 'Sismais NF'
-print(p1.nome_sistema)  # Sismais NF
-
-Produto.nome_sistema = 'Novo Sistema'
+print('p1 Sismais NF: ', p1.nome_sistema)  # Sismais NF
 
 p2 = Produto('Mouse Gamewr', 'UN', 99.99)
-print(p2.nome_sistema)  # Erikles e Guimarães: Sismais NF, Resultado: Maxpró ERP.
+print('p2: ', p2.nome_sistema)  # Erikles e Guimarães: Sismais NF, Resultado: Maxpró ERP.
 p2.nome_sistema = 'Outro novo sistema'
 print(p2.nome_sistema)
 

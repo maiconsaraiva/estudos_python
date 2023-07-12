@@ -1,0 +1,6 @@
+
+
+- Alt+Ctrl+Shift+N = Exibe caixa de pesquisa para busca de classes, termos symbols e outros
+
+
+

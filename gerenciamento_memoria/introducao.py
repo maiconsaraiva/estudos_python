@@ -21,8 +21,8 @@ Garbage Collector
 # Exemplo, verificando se duas variáveis apontam para o mesmo objeto
 import sys
 
-x = 10
-y = x
+x = 10  # Cria variável na memória
+y = x  # Não cria uma nova variável, apenas aponta para X, se eu alterar y, significa que estou alterando x.
 
 print(id(y))
 print(id(x))
